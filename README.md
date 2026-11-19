@@ -13,20 +13,20 @@
 
 ---
 
-## 📄 Documentación del Proyecto
+## Documentación del Proyecto
 
-* 📘 **[Leer / Descargar Memoria Completa (PDF)](./Memoria_TFG_Fernando_Rodriguez.pdf)** *(128 páginas — Arquitectura, entrenamiento, evaluación experimental y anexos).*
-* 📊 **[Ver Presentación de Defensa (PDF/PPTX)](./Presentacion_Defensa_TFG.pdf)** *(Diapositivas presentadas ante el tribunal).*
+* **[Leer / Descargar Memoria Completa (PDF)](./Memoria_TFG_Fernando_Rodriguez.pdf)** *(128 páginas — Arquitectura, entrenamiento, evaluación experimental y anexos).*
+* **[Ver Presentación de Defensa (PDF/PPTX)](./Presentacion_Defensa_TFG.pdf)** *(Diapositivas presentadas ante el tribunal).*
 
 ---
 
-## 🎯 Descripción General
+## Descripción General
 
 El análisis estadístico en el voleibol se realiza mayoritariamente de forma manual (costoso en tiempo y propenso a errores) o mediante infraestructuras multicámara de élite económicamente inaccesibles para la mayoría de clubes.
 
 **Voley+** es una plataforma *End-to-End* que democratiza la analítica deportiva automatizando la extracción de métricas físicas y tácticas a partir de **una única toma de vídeo frontal**, sin requerir sensores corporales (GPS/RFID) ni hardware especializado.
 
-### ✨ Funcionalidades Principales
+### Funcionalidades Principales
 * **Detección y Seguimiento Multiobjeto:** Localización continua de jugadores y balón en alta resolución mediante una red **YOLOv8** entrenada a medida y **ByteTrack**.
 * **Identificación de Dorsales:** Pipeline de preprocesamiento morfológico (recorte de torso, interpolación Lanczos4, ecualización CLAHE e inversión binaria) acoplado a **EasyOCR** y a una máquina de estados finita.
 * **Rectificación Espacial (Homografía 2D):** Calibración interactiva de los 4 vértices de la pista para proyectar las coordenadas de cámara a un plano métrico real de **$9 \times 9\text{ m}$**.
@@ -35,7 +35,7 @@ El análisis estadístico en el voleibol se realiza mayoritariamente de forma ma
 
 ---
 
-## 📊 Resultados Experimentales Destacados
+## Resultados Experimentales Destacados
 
 Evaluado sobre partidos de nivel olímpico (*Juegos Olímpicos de París 2024 y Tokio 2020*) y un conjunto de test independiente:
 
@@ -49,7 +49,7 @@ Evaluado sobre partidos de nivel olímpico (*Juegos Olímpicos de París 2024 y 
 
 ---
 
-## 🏗️ Arquitectura y Stack Tecnológico
+## Arquitectura y Stack Tecnológico
 
 El sistema sigue una arquitectura distribuida cliente-servidor sin estado persistente (*stateless*):
 
